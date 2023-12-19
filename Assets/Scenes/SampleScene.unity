@@ -854,6 +854,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 957606735}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c326f4803a8c56241a6882a33cbcc80c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 957606736}
   m_SourcePrefab: {fileID: 100100000, guid: c326f4803a8c56241a6882a33cbcc80c, type: 3}
 --- !u!4 &957606730 stripped
 Transform:
@@ -953,6 +957,20 @@ MonoBehaviour:
   moveSpeed: 5
   rotateSpeed: 90
   myRigidbody: {fileID: 957606734}
+  myAnim: {fileID: 957606736}
+--- !u!114 &957606736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 957606731}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebb0dcf6efbd04f4cb6cb433d8ee6e9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 957606732}
 --- !u!1 &959496836
 GameObject:
   m_ObjectHideFlags: 0

@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class PlayerMovement : BaseMovement
 {
+    [SerializeField]
+    private AnimatorController myAnim;
+    
     private Vector3 tempMovement;
     // Start is called before the first frame update
     void Start()
@@ -16,5 +19,12 @@ public class PlayerMovement : BaseMovement
     {
         tempMovement = new Vector3(Input.GetAxisRaw("Horizontal"), 0f, Input.GetAxisRaw("Vertical"));
         Move(tempMovement);
+        if (myAnim)
+        {
+            myAnim.ChangeAnimFloatValue("moveX", tempMovement.x);
+            myAnim.ChangeAnimFloatValue("moveZ", tempMovement.z);
+        }
+       
+
     }
 }
