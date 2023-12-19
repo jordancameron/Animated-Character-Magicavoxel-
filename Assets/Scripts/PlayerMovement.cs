@@ -34,7 +34,7 @@ public class PlayerMovement : BaseMovement
         //tempMovement = new Vector3(Input.GetAxis("Horizontal"), 0f, Input.GetAxis("Vertical"));
         //float rot = Mathf.Atan2(tempMovement.z, tempMovement.x) * Mathf.Rad2Deg;
         //transform.rotation = Quaternion.Euler(0f, rot, 0f);
-
+  
         Move(tempMovement);
     }
 
