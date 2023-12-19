@@ -954,7 +954,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22975f0c2ca547d4a90c4238778beb4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
+  moveSpeed: 30
   rotateSpeed: 90
   myRigidbody: {fileID: 957606734}
   myAnim: {fileID: 957606736}

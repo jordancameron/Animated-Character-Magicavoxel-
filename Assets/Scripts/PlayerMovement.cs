@@ -21,10 +21,14 @@ public class PlayerMovement : BaseMovement
         Move(tempMovement);
         if (myAnim)
         {
-            myAnim.ChangeAnimFloatValue("moveX", tempMovement.x);
-            myAnim.ChangeAnimFloatValue("moveZ", tempMovement.z);
+            if(tempMovement.magnitude > 0f)
+            {
+                myAnim.ChangeAnimBoolValue("Running", true);
+            }
+            else
+            {
+                myAnim.ChangeAnimBoolValue("Running", false);
+            }
         }
-       
-
     }
 }
